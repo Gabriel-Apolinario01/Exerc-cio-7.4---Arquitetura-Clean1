@@ -13,9 +13,15 @@ def home():
 
 @app.route("/comprar/<int:id>")
 def comprar(id):
-    livros = controller.listar_livros()
-    livro = livros[id]
+    livro = controller.comprar_livro(id)
     return render_template("compra.html", livro=livro)
+
+
+# HISTÓRICO
+@app.route("/compras")
+def compras():
+    compras = controller.service.listar_compras()
+    return render_template("compras.html", compras=compras)
 
 
 if __name__ == "__main__":

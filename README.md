@@ -1,1 +1,19 @@
-# Exerc-cio-7.2---Arquitetura-MVC
+# Exerccio-7.3-Arquitetura-MVC
+
+# Livraria Multicamadas
+
+Projeto desenvolvido em Python com Flask.
+
+Arquitetura:
+- View (Flask)
+- Controller
+- Service (regras de negócio)
+- Model (dados)
+
+Nova funcionalidade:
+- Histórico de compras
+
+Como executar:
+
+cd Livraria
+python -m view.app

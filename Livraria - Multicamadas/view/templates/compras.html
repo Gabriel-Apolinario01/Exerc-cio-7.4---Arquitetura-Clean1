@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compras</title>
+</head>
+<body>
+
+<h1> Histórico de Compras</h1>
+
+<ul>
+{% for livro in compras %}
+    <li>{{ livro.nome }} - R$ {{ livro.preco }}</li>
+{% endfor %}
+</ul>
+
+<a href="/"> Voltar</a>
+
+</body>
+</html>
